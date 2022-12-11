@@ -1,0 +1,419 @@
+@charset "ISO-8859-1";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #480ed2;
+    color: aliceblue;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    background: rgba(255,255,255,0.11);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%,-50%);
+}
+h1{
+    position: absolute;
+    top: 150px;
+    font-size: 35px;
+    left: 600px;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container div{
+    border: 1px solid rgba(155, 155, 155, 0.114);
+    width: 365px;
+    background-color: rgba(113, 160, 214, 0.555);
+    transition: 0.3s;
+}
+.container div:hover{
+    border: 1px solid #fff;
+}
+.container div:nth-child(1){
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    
+    padding: 20px;
+}
+.container div:nth-child(2){
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    padding: 20px;
+    z-index: 20;
+}
+
+.container div:nth-child(3){
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    padding: 20px;
+    z-index: 20;
+}
+.container div:nth-child(4){
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    padding: 20px;
+    z-index: 20;
+}
+.container div:nth-child(5){
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    padding: 20px;
+    z-index: 20;
+}
+.container div:nth-child(6){
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    padding: 20px;
+    z-index: 20;
+}
+.container div a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border:1px solid #000; */
+
+}
+.container div:nth-child(1) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+    
+}
+.container div:nth-child(1) a:hover:after{
+    /* width: 165px; */
+    animation: anime1 0.3s linear forwards;
+}
+@keyframes anime1 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 165px;
+    }
+}
+.container div:nth-child(2) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+}
+.container div:nth-child(2) a:hover:after{
+    /* width: 165px; */
+    animation: anime2 0.3s linear forwards;
+}
+@keyframes anime2 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 165px;
+    }
+}
+.container div:nth-child(3) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+}
+.container div:nth-child(3) a:hover:after{
+    /* width: 165px; */
+    animation: anime3 0.35s linear forwards;
+}
+@keyframes anime3 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 230px;
+    }
+}
+.container div:nth-child(4) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+}
+.container div:nth-child(4) a:hover:after{
+    /* width: 165px; */
+    animation: anime4 0.25s linear forwards;
+}
+@keyframes anime4 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 90px;
+    }
+}
+.container div:nth-child(5) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+}
+.container div:nth-child(5) a:hover:after{
+    /* width: 165px; */
+    animation: anime5 0.25s linear forwards;
+}
+@keyframes anime5 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 65px;
+    }
+}
+.container div:nth-child(6) a::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    background: #fff;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+
+    width: 0px;
+    height: 2px;
+}
+.container div:nth-child(6) a:hover:after{
+    /* width: 165px; */
+    animation: anime6 0.25s linear forwards;
+}
+@keyframes anime6 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 105px;
+    }
+}
+.container div button{
+    position: absolute;
+    left: 260px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    font-size: 18px;
+}
+/* .container div:nth-child(1) button{
+    left: 270px;
+}
+.container div:nth-child(2) button{
+    left: 270px;
+}
+.container div:nth-child() button{
+    left: 270px;
+}
+.container div:nth-child(1) button{
+    left: 270px;
+}
+.container div:nth-child(1) button{
+    left: 270px;
+}
+.container div:nth-child(1) button{
+    left: 270px;
+} */
+.content{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 500px;
+    height: 200px;
+    /* color: #000; */
+    padding: 20px 30px;
+    background: rgba(255,255,255,1);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 3px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.content.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.content .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    /* background: rgb(3, 3, 3); */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content form{
+    position: absolute;
+    /* text-align: center; */
+    color: rgb(0, 0, 0);
+    padding-left:30px ;
+    /* margin: 10px 0px 20px; */
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content form #form1-element{
+    position: relative;
+    top: 45px;
+    left: -140px;
+    padding: 10px 30px ;
+    border: 1px solid #000;
+    width: 300px;
+    /* margin-bottom:15px; */
+}
+.content form #form2-element{
+    position: relative;
+    padding: 10px 30px ;
+    top: 45px;
+    left: -140px;
+    width: 300px;
+    border: 1px solid #000;
+    /* margin-bottom:15px; */
+}
+.content form #form3-element{
+    position: relative;
+    padding: 10px 30px ;
+    top: 25px;
+    left: 0px;
+    border: 1px solid #000;
+    /* margin-bottom:15px; */
+}
+.content form #form4-element{
+    position: relative;
+    padding: 10px 30px ;
+    top: 45px;
+    left: -75px;
+    border: 1px solid #000;
+    /* margin-bottom:15px; */
+}
+.content form #form5-element{
+    position: relative;
+    padding: 10px 30px ;
+    top: 45px;
+    left: -55px;
+    border: 1px solid #000;
+    /* margin-bottom:15px; */
+}
+.content form #form6-element{
+    position: relative;
+    padding: 10px 30px ;
+    top: 45px;
+    left: -87px;
+    border: 1px solid #000;
+    width: 300px;
+    /* padding: 8px 5px; */
+    /* margin-bottom:15px; */
+}
+.content form input[type="submit"]{
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    padding: 8px 13px;
+    border: none;
+    background-color: #4e54c8;
+    color: white;
+    border-radius: 3px;
+}
+::-webkit-file-upload-button{
+    /* position: absolute; */
+    color: white;
+    background: linear-gradient(to right, #232526, #414345);
+    border: none;
+    padding: 8px 20px;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+.back{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 75px;
+    height: 36px;
+    border: 1px solid white;
+    border-radius: 5px;
+    /* z-index: 20; */
+}
+.back a{
+    position: relative;
+    top: 5px;
+    left: 20px;
+    transition: 0.2s;
+}.back a i{
+    font-size: 24px;
+    color: white;
+    width: 70px;
+}
+.back:hover a{
+    left: -15px;
+}
+.back a span{
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+    display: none;
+}
+.back:hover a span{
+    position: absolute;
+    top: -3px;
+    left: 35px;
+    display: block;
+}

@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+*{
+	margin:0;
+	padding:0;
+}
+.register{
+	position:absolute;
+	top:50px;
+	left:50%;
+	width:600px;
+	height:600px;
+	transform:translateX(-50%);
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 10px 36px rgba(97, 97, 97, .5);
+	padding:50px;
+}
+.register h1{
+	text-align:center;
+	font-size:30px;
+	color: #0eb5ec;
+}
+.register .box{
+	position:absolute;
+	top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.register .box form .hover{
+	position:relative;
+	height:50px;
+	width:500px;
+	margin-bottom:20px;
+}
+.register .box form .hover input{
+	position :absolute;
+	padding: 0 20px;
+	width:450px;
+	height:40px;
+	border:2px solid gray; 
+	outline:none;
+	font-size:18px;
+	border-radius: 10px;
+}
+.register .box form .hover input:focus{
+	border:2px solid #0eb5ec; 
+}
+.register .box form .hover p{
+	position:absolute;
+	left: 20px;
+	top:-10px;
+	pointer-events:none;
+    z-index: 1;
+	font-size:15px;
+	color: gray;
+	padding: 0 5px;
+	transition:0.3s;
+	background-color: #fff;
+}
+
+.register .box form .btn{
+	position: relative;
+	width: 500px;
+}
+.register .box form .btn input{
+	/* position: absolute; */
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 0 10px 10px rgba(97, 97, 97, .2);
+}
+.register .box form .btn.green input{
+	position: relative;
+	left: 400px;
+	background-color: rgb(1, 201, 1);
+}
+.register .box form .btn.red input{
+	position: relative;
+	top: -40px;
+	background-color: rgb(201, 131, 1);
+}
+.register .box form .btn input:hover{
+	box-shadow: 0 10px 25px rgba(97, 97, 97, .3);
+}
+.back{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 75px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* z-index: 20; */
+}
+.back a{
+    position: relative;
+    top: 5px;
+    left: 20px;
+    transition: 0.2s;
+}.back a i{
+    font-size: 24px;
+    color: black;
+    width: 70px;
+}
+.back:hover a{
+    left: -15px;
+}
+.back a span{
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    color: black;
+    font-weight: bold;
+    transition: 0.1s;
+    display: none;
+}
+.back:hover a span{
+    position: absolute;
+    top: -3px;
+    left: 35px;
+    display: block;
+}
